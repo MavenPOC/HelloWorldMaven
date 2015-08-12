@@ -14,8 +14,6 @@ public class WelcomeUserAction{
 
 	// all struts logic here
 	public String execute() {
-     System.out.println("In Welcome Page");
 		return "SUCCESS";
-
 	}
 }
