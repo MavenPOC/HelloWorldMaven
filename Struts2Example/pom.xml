@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 	<version>com.mkyong.common</version>
 	<name>Struts2Example Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<url>https://github.com/MavenPOC/HelloWorldMaven.git</url>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
