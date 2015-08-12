@@ -10,7 +10,7 @@
 			<result>pages/login.jsp</result>
 		</action>
 		<action name="Welcome" class="com.mkyong.user.action.WelcomeUserAction">
-			<result name="SUCCESS">welcome</result>
+			<result name="SUCCESS">welcome_user.jsp</result>
 		</action>
 	</package>
 	
