@@ -1,7 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
-<head></head>
+<head>
+<title>login</title>
+</head>
 <body>
 <h1>Struts 2 Hello World Example</h1>
 
