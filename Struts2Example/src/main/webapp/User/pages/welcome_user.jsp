@@ -2,8 +2,8 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head></head>
-<body style="background-color:red">
-<h1>Struts 2 Hello World Example</h1>
+<body>
+<h1>Struts 2 Hello World Example TEST</h1>
 
 <h4>Hello <s:property value="username"/></h4>
 
