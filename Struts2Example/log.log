@@ -1,0 +1,35 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Struts2Example Maven Webapp com.mkyong.common
+[INFO] ------------------------------------------------------------------------
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.pom
+740 B   2 KB    6 KB   7 KB          Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.pom (7 KB at 1.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.jar
+854 B   2 KB    2 KB   3 KB   3 KB   4 KB   4 KB   5 KB   5 KB   5 KB   6 KB   6 KB   7 KB   7 KB   8 KB   8 KB   9 KB   9 KB   10 KB   10 KB   11 KB   11 KB   11 KB   12 KB   12 KB   13 KB   13 KB   14 KB   14 KB   15 KB   15 KB   16 KB   16 KB   17 KB   17 KB   18 KB   18 KB   19 KB   19 KB   20 KB   20 KB   21 KB   21 KB   22 KB   22 KB   23 KB   23 KB   24 KB   24 KB   25 KB   25 KB   26 KB   26 KB   27 KB   27 KB   28 KB   28 KB   29 KB   29 KB   30 KB   30 KB   31 KB   31 KB   32 KB   32 KB   33 KB   33 KB   34 KB   34 KB   35 KB   35 KB   36 KB   36 KB   37 KB   37 KB   38 KB   38 KB   39 KB   39 KB   40 KB   40 KB   41 KB   41 KB   42 KB   42 KB   43 KB   43 KB   44 KB   44 KB   45 KB   45 KB   46 KB   46 KB   47 KB   47 KB   48 KB   48 KB   49 KB   49 KB   50 KB   50 KB   51 KB   51 KB   52 KB   52 KB   53 KB   53 KB   54 KB   54 KB   55 KB   55 KB   56 KB   56 KB   57 KB   57 KB   58 KB   58 KB   59 KB   59 KB   60 KB   60 KB   61 KB   61 KB   62 KB   62 KB   63 KB   63 KB   64 KB   64 KB   65 KB   65 KB   66 KB   66 KB   67 KB   67 KB   68 KB   68 KB   69 KB   69 KB   70 KB   70 KB   71 KB   71 KB   72 KB   73 KB   73 KB   74 KB   76 KB   77 KB           Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.jar (77 KB at 3.1 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Struts2Example ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ Struts2Example ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to D:\MavenPOC\Struts2Example\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Struts2Example ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\MavenPOC\Struts2Example\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ Struts2Example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Struts2Example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ Struts2Example ---
+Downloading: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.pom
+861 B   4 KB    6 KB   10 KB   11 KB   12 KB           Downloaded: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.pom (12 KB at 1.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.3.1/xstream-parent-1.3.1.pom
+829 B   4 KB    7 KB   10 KB   12 KB   14 KB   14 KB           Downloaded: http://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.3.1/xstream-parent-1.3.1.pom (14 KB at 0.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom
+881 B   2 KB    Terminate batch job (Y/N)? 
