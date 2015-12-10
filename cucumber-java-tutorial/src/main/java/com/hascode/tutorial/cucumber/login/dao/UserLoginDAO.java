@@ -12,17 +12,15 @@ public class UserLoginDAO {
 		System.out.println("jdbc connection");
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/strutsdb", "root", "Oracle862");
+				"jdbc:mysql://localhost:3306/test", "root", "Oracle862");
 
 		try {
 
 			try {
 				Statement st = con.createStatement();
-				ResultSet rs = st.executeQuery("Select first_name from test.users where username="
-								+ userName
-								+ "and password="
-								+ password+"')");
-				name=rs.getString(1);
+				ResultSet rs = st.executeQuery("Select first_name from test.users where user_name='"+userName+"'and password='"+password+"'");
+				rs.next();
+				name=rs.getString("first_name");
 				return name;
 			} catch (SQLException ex) {
 				System.out.println("SQL statement is not executed!" + ex);

@@ -22,18 +22,18 @@ public class ValidateLoginSteps {
 	private UserLoginAction loginAction =new UserLoginAction() ;
 	String result="";
 
-	@Given("^Given user navigates to login.jsp$")
+	@Given("^user navigates to login.jsp$")
 	public void given_I_navigate_to_the_mock_application(){
-		
+		System.out.println("HI");
 	}
 
-	@When("^I try to login with user= '(.+)' and password = '(.+)'$")
-	public void when_I_try_to_login(String username,String password) throws Exception{		
+	@When("^I try to login with user '(.+)' and password '(.+)'$")
+	public void when_I_try_to_login(final String username,final String password) throws Exception{		
 		result =loginDao.validateData(username, password);
 	}
 
-	@Then("I should see the name = '(.+)' $")
-	public void nameFound(String name ) {
+	@Then("I should see the name '(.+)'$")
+	public void nameFound(String name) {
 		assertThat(result, equalTo(name));
 	}
 
