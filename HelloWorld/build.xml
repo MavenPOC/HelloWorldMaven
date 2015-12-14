@@ -2,8 +2,8 @@
 <project name="helloWorld" default="compile" xmlns:cpptasks="antlib:net.sf.antcontrib.cpptasks">
     <target name="compile">
         <mkdir dir="target/obj"/>
-        <cpptasks:cc outtype="executable" subsystem="console" outfile="target/HelloWorld" objdir="target/obj">
+        <cpptasks:g++ outtype="executable" subsystem="console" outfile="target/HelloWorld" objdir="target/obj">
            <fileset dir="src/" includes="*.cpp"/>
-        </cpptasks:cc>
+        </cpptasks:g++>
     </target>
 </project>
