@@ -1,9 +1,15 @@
 <?xml version="1.0"?>
-<project name="helloWorld" default="compile" xmlns:cpptasks="antlib:net.sf.antcontrib.cpptasks">
-    <target name="compile">
-        <mkdir dir="target/obj"/>
-        <cpptasks:gcc outtype="executable" subsystem="console" outfile="target/HelloWorld" objdir="target/obj">
-           <fileset dir="src/" includes="*.cpp"/>
-        </cpptasks:gcc>
-    </target>
+<project name="HelloWorld" default="gcc" basedir=".">
+<target name="init">
+<property name="source" value="src/HelloWorld.cpp"/>
+<property name="build" location="build"/>
+</target>
+<target name="gcc" depends="init">
+<mkdir dir="${build}"/>
+<exec dir="." executable="g++">
+<arg line="-o"/>
+<arg line="${build}/test"/>
+<arg line="${source}"/>
+</exec>
+</target>
 </project>
