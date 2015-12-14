@@ -1,4 +1,4 @@
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
 #include<graphics.h>
 #include<dos.h>
