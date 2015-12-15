@@ -12,7 +12,7 @@
 			<arg line="${source}" />
 		</exec>
 	</target>
-	
+
 	<!--Doxygen
 	<property name="build.native" value="./src" />
 	<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin/doxygen.exe" />
@@ -26,23 +26,23 @@
 			<arg value="Doxygen.cfg" />
 		</exec>
 	</target>-->
-	
+
 	<!--CppCheck-->
-	<property name="source" value="src" />
-	<property name="execPath"	value="D:/Dev-ops/Setup/Cppcheck/cppcheck.exe" />				
-			<property name="reportDir"	value="reports/cppcheck" />										
-			<property name="reportPath"	value="${reportDir}/cppcheck-result-*.xml" />
-			<property name="outputFile"	value="/cppcheck-result-1.xml" />
-			<property name="cppcheck.checks"		value="all" />												
-			
-			<echo message="Running CppCheck analysis..." 	level="info"/>
-			<mkdir dir="${reportDir}" />		
-			<exec executable="${execPath}" error="${reportDir}${outputFile}">
-				<arg value="--enable=${cppcheck.checks}" />
-				<arg value="--xml" />
-				<arg value="--verbose" />
-				<arg value="--quiet" />
-				<arg value="${source}" />
-			</exec>
-	
+	<property name="execPath" value="D:/Dev-ops/Setup/Cppcheck/cppcheck.exe" />
+	<property name="reportDir" value="reports/cppcheck" />
+	<property name="reportPath" value="${reportDir}/cppcheck-result-*.xml" />
+	<property name="outputFile" value="/cppcheck-result-1.xml" />
+	<property name="cppcheck.checks" value="all" />
+
+	<echo message="Running CppCheck analysis..." level="info" />
+	<target name="cppcheck" depends="init">
+		<mkdir dir="${reportDir}" />
+		<exec executable="${execPath}" error="${reportDir}${outputFile}">
+			<arg value="--enable=${cppcheck.checks}" />
+			<arg value="--xml" />
+			<arg value="--verbose" />
+			<arg value="--quiet" />
+			<arg value="${source}" />
+		</exec>
+	</target>
 </project>
