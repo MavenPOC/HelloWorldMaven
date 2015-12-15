@@ -38,12 +38,7 @@
 
 		<mkdir dir="${reportDir}" />
 		<exec executable="${execPath}" error="${reportDir}${outputFile}">
-			<arg value="--enable=${cppcheck.checks}" />
-			<arg value="--xml" />
-			<arg value="--xml-version=2" />
-			<arg value="--inconclusive" />
-			<arg value="--language=c++"/>
-			<arg value="${source}" />
+			 <arg value="--xml --xml-version=2 --enable=all --inconclusive --language=c++ *.cpp"/>
 		</exec>
 	</target>
 </project>
