@@ -1,30 +1,40 @@
 <?xml version="1.0"?>
 <project name="HelloWorld" default="gcc" basedir=".">
-<target name="init">
-<property name="source" value="src/Hangman.cpp"/>
-<property name="build" location="build"/>
-</target>
-<target name="gcc" depends="init">
-<mkdir dir="${build}"/>
-<exec dir="." executable="g++">
-<arg line="-o"/>
-<arg line="${build}/test"/>
-<arg line="${source}"/>
-</exec>
-</target>
-	<property name="build.native" value="./"/>
-		  <property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen"/>
-		  <target name="clean" description="clean up" >	
-		    <delete quiet="true">	
-		      <fileset dir="Docs/html" includes="**/*" />	
-		    </delete>	
-		  </target>		 	
-		  <target name="doxygen"
-		          description="Process documentation" >	
-		    <exec executable="${doxygen.cmd}"	
-		          dir="${build.native}"	
-		          failonerror="false">	
-		       <arg value="Doxygen.cfg"/>	
-		    </exec>	
-		  </target>	
+	<target name="init">
+		<property name="source" value="src/Hangman.cpp" />
+		<property name="build" location="build" />
+	</target>
+	<target name="gcc" depends="init">
+		<mkdir dir="${build}" />
+		<exec dir="." executable="g++">
+			<arg line="-o" />
+			<arg line="${build}/test" />
+			<arg line="${source}" />
+		</exec>
+	</target>
+	
+	<!--Doxygen
+	<property name="build.native" value="./" />
+	<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin" />
+	<target name="clean" description="clean up">
+		<delete quiet="true">
+			<fileset dir="HelloWorld/Docs/html" includes="**/*" />
+		</delete>
+	</target>
+	<target name="doxygen" description="Process documentation">
+		<exec executable="${doxygen.cmd}" dir="${build.native}" failonerror="false">
+			<arg value="Doxygen.cfg" />
+		</exec>
+	</target>-->
+	
+	<!--CppCheck-->
+	<property name="build.native" value="./src" />
+	<property name="cppcheck.cmd" value="/usr/bin/cppcheck" />
+	<target name="cppcheck" description="C++ code check" >
+		<exec dir="${build.native}" executable="${cppcheck.cmd}" failonerror="true">
+			<arg line="--xml --xml-version=2 --enable=all --inconclusive --language=c++ *.cpp"/>
+			<redirector error="cppcheck.xml" />
+		</exec>
+	</target>
+	
 </project>
