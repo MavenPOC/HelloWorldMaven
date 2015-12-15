@@ -40,8 +40,9 @@
 		<exec executable="${execPath}" error="${reportDir}${outputFile}">
 			<arg value="--enable=${cppcheck.checks}" />
 			<arg value="--xml" />
-			<arg value="--verbose" />
-			<arg value="--quiet" />
+			<arg value="--xml-version=2" />
+			<arg value="--inconclusive" />
+			<arg value="--language=c++"/>
 			<arg value="${source}" />
 		</exec>
 	</target>
