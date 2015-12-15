@@ -28,7 +28,7 @@
 	</target>-->
 	
 	<!--CppCheck-->
-	<property name="source" value="./src" />
+	<property name="source" value="src" />
 	<property name="execPath"	value="D:/Dev-ops/Setup/Cppcheck/cppcheck.exe" />				
 			<property name="reportDir"	value="reports/cppcheck" />										
 			<property name="reportPath"	value="${reportDir}/cppcheck-result-*.xml" />
