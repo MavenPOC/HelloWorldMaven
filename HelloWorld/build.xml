@@ -28,13 +28,21 @@
 	</target>-->
 	
 	<!--CppCheck-->
-	<property name="build.native" value="./src" />
-	<property name="cppcheck.cmd" value="D:/Dev-ops/Setup/Cppcheck/cppcheck.exe" />
-	<target name="cppcheck" description="C++ code check" >
-		<exec dir="${build.native}" executable="${cppcheck.cmd}" failonerror="true">
-			<arg line="--xml --xml-version=2 --enable=all --inconclusive --language=c++ *.cpp"/>
-			<redirector error="cppcheck.xml" />
-		</exec>
-	</target>
+	<property name="source" value="./src" />
+	<property name="execPath"	value="D:/Dev-ops/Setup/Cppcheck/cppcheck.exe" />				
+			<property name="reportDir"	value="reports/cppcheck" />										
+			<property name="reportPath"	value="${reportDir}/cppcheck-result-*.xml" />
+			<property name="outputFile"	value="/cppcheck-result-1.xml" />
+			<property name="cppcheck.checks"		value="all" />												
+			
+			<echo message="Running CppCheck analysis..." 	level="info"/>
+			<mkdir dir="${reportDir}" />		
+			<exec executable="${execPath}" error="${reportDir}${outputFile}">
+				<arg value="--enable=${cppcheck.checks}" />
+				<arg value="--xml" />
+				<arg value="--verbose" />
+				<arg value="--quiet" />
+				<arg value="${source}" />
+			</exec>
 	
 </project>
