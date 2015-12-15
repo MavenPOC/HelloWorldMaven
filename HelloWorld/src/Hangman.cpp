@@ -24,7 +24,7 @@ int main()
     string soFar(THE_WORD.size(), '-');
     string used = "";
 
-    cout << "\t\t\tWelcome to Hangman"!;
+    cout << "\t\t\tWelcome to Hangman!";
 	cout<<"\n\t\t\t-------------------\n\n";
 	cout<<"You have exactly " <<(MAX_WRONG - wrong)<< " guesses, goodluck!";
 
