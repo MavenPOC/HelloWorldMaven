@@ -15,7 +15,7 @@
 	
 	<!--Doxygen
 	<property name="build.native" value="./src" />
-	<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin" />
+	<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin/doxygen.exe" />
 	<target name="clean" description="clean up">
 		<delete quiet="true">
 			<fileset dir="HelloWorld/Docs/html" includes="**/*" />
@@ -29,7 +29,7 @@
 	
 	<!--CppCheck-->
 	<property name="build.native" value="./src" />
-	<property name="cppcheck.cmd" value="D:/Dev-ops/Setup/Cppcheck" />
+	<property name="cppcheck.cmd" value="D:/Dev-ops/Setup/Cppcheck/cppcheck.exe" />
 	<target name="cppcheck" description="C++ code check" >
 		<exec dir="${build.native}" executable="${cppcheck.cmd}" failonerror="true">
 			<arg line="--xml --xml-version=2 --enable=all --inconclusive --language=c++ *.cpp"/>
