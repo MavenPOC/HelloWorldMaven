@@ -3,7 +3,7 @@
 	<target name="init">
 		<property name="source" value="src/Hangman.cpp" />
 		<property name="build" location="build" />
-		<property name="Hangmanapp" value="./Hangman.out" />
+		<property name="Hangmanapp" value=".//Hangman.out" />
 	
 		<!--GCC Compile-->
 		<mkdir dir="${build}"/>
