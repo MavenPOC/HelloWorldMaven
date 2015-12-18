@@ -4,29 +4,28 @@
 		<property name="source1" value="src/Time.cpp" />
 		<property name="source2" value="src/main.cpp" />
 		<property name="build" location="build" />
-	
+
 		<!--GCC Compile-->
-		<mkdir dir="${build}"/>
+		<mkdir dir="${build}" />
 		<exec dir="." executable="g++">
 			<arg line="-o" />
-			<arg line="${build}/Time"/>
+			<arg line="${build}/Time" />
 			<arg line="${source1}" />
 			<arg line="${source2}" />
 		</exec>
-			
+
 		<!--Doxygen
-	<property name="build.native" value="./src" />
-	<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin/doxygen.exe" />
-	<target name="clean" description="clean up">
-		<delete quiet="true">
-			<fileset dir="HelloWorld/Docs/html" includes="**/*" />
-		</delete>
-	</target>
-	<target name="doxygen" description="Process documentation">
-		<exec executable="${doxygen.cmd}" dir="${build.native}" failonerror="false">
-			<arg value="Doxygen.cfg" />
-		</exec>
-	</target>-->
+		<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin/doxygen.exe" />
+		<target name="clean" description="clean up">
+			<delete quiet="true">
+				<fileset dir="HelloWorld/Docs/html" includes="**/*" />
+			</delete>
+		</target>
+		<target name="doxygen" description="Process documentation">
+			<exec executable="${doxygen.cmd}" dir="${build.native}" failonerror="false">
+				<arg value="Doxygen.cfg" />
+			</exec>
+		</target>-->
 
 		<!--CppCheck-->
 		<property name="execPath" value="D:/Dev-ops/Setup/Cppcheck/cppcheck.exe" />
@@ -39,10 +38,10 @@
 
 		<mkdir dir="${reportDir}" />
 		<exec executable="${execPath}" error="${reportDir}${outputFile}">
-			 <arg value="--xml --xml-version=2 --inconclusive --language=c++ *.cpp"/>
+			<arg value="--xml --xml-version=2 --inconclusive --language=c++ *.cpp" />
 		</exec>
-		
-		
-		
+
+
+
 	</target>
 </project>
