@@ -41,8 +41,8 @@
 			 <arg value="--xml --xml-version=2 --inconclusive --language=c++ *.cpp"/>
 		</exec>
 		
-		<!-- GPRof-->
-		<property name="gcovr" value="C:/Users/ashmkapo/AppData/Local/Programs/Python/Python35/Scripts/gcovr" />
+		<!-- Gcovr-->
+		<property name="gcovr" value="C:/Users/ashmkapo/AppData/Local/Programs/Python/Python35/Scripts/gcovr.exe" />
 		<property name="gcovrDir" value="reports/gcovr" />
 		<mkdir dir="${gcovrDir}" />
 		 <exec dir="${build}" executable="${gcovr}" failonerror="true">
