@@ -7,7 +7,7 @@
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
 		<exec dir="." executable="g++">
-			<arg line="-fprofile-arcs -ftest-coverage -fPIC -O0" />
+			<!--<arg line="-fprofile-arcs -ftest-coverage -fPIC -O0" />-->
 			<arg line="Hangman.cpp" />
 			<arg line="-o" />
 			<arg line="Hangman" />
