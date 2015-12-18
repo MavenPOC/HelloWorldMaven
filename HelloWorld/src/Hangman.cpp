@@ -1,163 +1,62 @@
 /**
- *   CS-11 Asn 6
- *   sphere.cpp
- *   Purpose: Calculates the area of a circle and the volume
- *   of a sphere.
- *
- *   @author Ed Parrish
- *   @version 1.0 3/17/04
-*/
-
-#include <iostream>
-
-#include <cmath>
-using namespace std;
-
-const double PI = 3.14159;
-
-/**
- *   Returns the area of a circle with the specified radius.
- *
- *   @param radius The radius of the circle.
- *   @return The area of the circle.
-*/
-double area(double radius);
-
-/**
- *   Returns the volume of a sphere with the specified radius.
- *
- *   @param radius The radius of the circle.
- *   @return The volume of the sphere.
-*/
-double volume(double radius);
-
-// Controls operation of the program.
-int main(void) {
-    double radius_of_both, area_of_circle, volume_of_sphere;
-
-    cout << "Enter a radius to use for both a circle\n"
-            << "and a sphere (in inches): ";
-    cin >> radius_of_both;
-
-    area_of_circle = area(radius_of_both);
-    volume_of_sphere = volume(radius_of_both);
-
-    cout << "Radius = " << radius_of_both << " inches\n"
-            << "Area of circle = " << area_of_circle
-            << " square inches\n"
-            << "Volume of sphere = " << volume_of_sphere
-            << " cubic inches\n";
-
-    return 0;
-}
-
-// Returns the area of a circle with the specified radius.
-double area(double radius) {
-    return (PI * pow(radius, 2));
-}
-
-// Returns the volume of a sphere with the specified radius.
-double volume(double radius) {
-    return ((4.0 / 3.0) * PI * pow(radius, 3));
-}
-
-/*
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <ctime>
-#include <cctype>
-
-using namespace std;
-
-int main()
+ *  A test class. A more elaborate class description.
+ */
+class Test
 {
+  public:
+    /**
+     * An enum.
+     * More detailed enum description.
+     */
+    enum TEnum {
+          TVal1, /**< enum value TVal1. */
+          TVal2, /**< enum value TVal2. */
+          TVal3  /**< enum value TVal3. */
+         }
+       *enumPtr, /**< enum pointer. Details. */
+       enumVar;  /**< enum variable. Details. */
 
-    const int MAX_WRONG = 8;
+      /**
+       * A constructor.
+       * A more elaborate description of the constructor.
+       */
+      Test();
+      /**
+       * A destructor.
+       * A more elaborate description of the destructor.
+       */
+     ~Test();
 
-    vector<string> words;
-    words.push_back("PIZZA");
-    words.push_back("BACON");
-    words.push_back("COMPLICATED");
+      /**
+       * a normal member taking two arguments and returning an integer value.
+       * @param a an integer argument.
+       * @param s a constant character pointer.
+       * @see Test()
+       * @see ~Test()
+       * @see testMeToo()
+       * @see publicVar()
+       * @return The test results
+       */
+       int testMe(int a,const char *s);
 
-    srand(static_cast<unsigned int>(time(0)));
-    random_shuffle(words.begin(), words.end());
-    const string THE_WORD = words[0];
-    int wrong = 0;
-    string soFar(THE_WORD.size(), '-');
-    string used = "";
+      /**
+       * A pure virtual member.
+       * @see testMe()
+       * @param c1 the first argument.
+       * @param c2 the second argument.
+       */
+       virtual void testMeToo(char c1,char c2) = 0;
 
-    cout << "\t\t\tWelcome to Hangman!";
-	cout<<"\n\t\t\t-------------------\n\n";
-	cout<<"You have exactly " <<(MAX_WRONG - wrong)<< " guesses, goodluck!";
+      /**
+       * a public variable.
+       * Details.
+       */
+       int publicVar;
 
+      /**
+       * a function variable.
+       * Details.
+       */
+       int (*handler)(int a,int b);
+};
 
-    while ((wrong < MAX_WRONG) && (soFar != THE_WORD))
-    {
-        cout << "\nYou've used the following letters:\n" << used << endl;
-        cout << "So far, the word is: " << soFar << endl;
-
-        char guess;
-        cout << "\n\nEnter your guess: ";
-        cin >> guess;
-        guess = toupper(guess); //make uppercase since secret word in uppercase
-
-        while (used.find(guess) != string::npos)
-        {
-            cout << "\nYou've already guessed " << guess << endl;
-            cout << "Enter your guess: ";
-            cin >> guess;
-            guess = toupper(guess);
-        }
-
-        used += guess;
-
-        if (THE_WORD.find(guess) != string::npos)
-        {
-            cout << "That's right! " << guess << " is in the word.\n";
-            for (unsigned int i = 0; i < THE_WORD.length(); ++i)
-			{
-                if (THE_WORD[i] == guess)
-				{
-                    soFar[i] = guess;
-				}
-			}
-        }
-        else
-        {
-			++wrong;
-            cout << "Sorry, " << guess << " isn't in the word.\n";
-			cout<<"You have " <<(MAX_WRONG - wrong)<< " guesses left.\n";
-
-        }
-    }
-    if (wrong == MAX_WRONG)
-	{
-        cout << "Game over, you've been hanged!";
-
-	}
-    else
-	{
-        cout << "Congratulation! You've successfully guessed the secret word!";
-	}
-
-	//This is a little something i like to do at the end of my games ;)
-    cout << "\nThe word was " << THE_WORD<<"\n\n";
-	int rate;
-	cout<<"Please take a moment of your time and rate the game\n";
-	cout<<"1 - It was fun!\n";
-	cout<<"2 - It was ok\n";
-	cout<<"3 - It was bad\n";
-	cin>>rate;
-	switch (rate)
-	{
-	case 1: cout<<"We are so glad to hear that! thanks for the positive feedback!\n"; break;
-	case 2: cout<<"We'll do better next time, thanks for your feedback!\n"; break;
-	case 3: cout<<"We are terribly sorry about that, we'll do better next time\n"; break;
-	default: cout<<"Good-bye\n"; break;
-	}
-	system("pause");
-    return 0;
-}
-*/
