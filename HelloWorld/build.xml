@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project name="HelloWorld" basedir=".">
 	<target name="init">
-		<property name="source" value="src/main.cpp" />
+		<property name="source" value="src" />
 		<property name="build" location="build" />
 	
 		<!--GCC Compile-->
