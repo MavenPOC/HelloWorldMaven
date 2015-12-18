@@ -8,7 +8,7 @@
 		<!--GCC Compile-->
 		<mkdir dir="${build}"/>
 		<exec dir="." executable="g++">
-			<arg line="-fprofile-arcs -ftest-coverage -O0 -o" />
+			<arg line="-o" />
 			<arg line="${build}/Hangman"/>
 			<arg line="${source}" />
 		</exec>
