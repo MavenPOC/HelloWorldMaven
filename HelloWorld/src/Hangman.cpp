@@ -1,4 +1,5 @@
-/**
+/**  @mainpage DemoProject
+ *   @par Description:
  *   CS-11 Asn 6
  *   sphere.cpp
  *   Purpose: Calculates the area of a circle and the volume
