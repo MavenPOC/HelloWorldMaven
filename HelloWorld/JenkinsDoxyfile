@@ -25,7 +25,7 @@
 # The default value is: UTF-8.
 
 DOXYFILE_ENCODING      = UTF-8
-
+INPUT				   = HelloWorld/src
 # The PROJECT_NAME tag is a single word (or a sequence of words surrounded by
 # double-quotes, unless you are using Doxywizard) that should identify the
 # project for which the documentation is generated. This name is used in the
