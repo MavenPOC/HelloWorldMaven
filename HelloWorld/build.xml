@@ -2,15 +2,15 @@
 <project name="HelloWorld" basedir=".">
 	<target name="init">
 		<property name="source" value="src/Hangman.cpp" />
-		<property name="build" location="build" />
+		<property name="build" location="build/test" />
 	
 		<!--GCC Compile-->
-		<mkdir dir="${build}/test" />
+		<mkdir dir="${build}" />
 		<exec dir="." executable="g++">
 			<arg line="-fprofile-arcs -ftest-coverage -fPIC -O0" />
 			<arg line="${source}" />
 			<arg line="-o" />
-			<arg line="${build}/test" />
+			<arg line="${build}" />
 		</exec>
 
 
