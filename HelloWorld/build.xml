@@ -42,7 +42,7 @@
 		</exec>
 		
 		<!-- GPRof-->
-		<property name="gcovr" value="D:/Dev-ops/Setup/gcovr" />
+		<property name="gcovr" value="C:/Users/ashmkapo/AppData/Local/Programs/Python/Python35/Scripts/gcovr" />
 		<property name="gcovrDir" value="reports/gcovr" />
 		<mkdir dir="${gcovrDir}" />
 		 <exec dir="${build}" executable="${gcovr}" failonerror="true">
