@@ -12,7 +12,7 @@
 			<arg line="${source}" />
 		</exec>
 		
-		<exec dir="${build}" executable="./Hangman" failonerror="true">
+		<exec dir="${build}" executable="./Hangman.exe" failonerror="true">
 		</exec>
 		
 		
