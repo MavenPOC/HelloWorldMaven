@@ -2,7 +2,7 @@
 <project name="HelloWorld" basedir=".">
 	<target name="init">
 		<property name="source" value="src/Hangman.cpp" />
-		<property name="build" location="build/test" />
+		<property name="build" location="build" />
 	
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
@@ -10,7 +10,7 @@
 			<arg line="-fprofile-arcs -ftest-coverage -fPIC -O0" />
 			<arg line="${source}" />
 			<arg line="-o" />
-			<arg line="${build}" />
+			<arg line="${build}/Hangman" />
 		</exec>
 
 
