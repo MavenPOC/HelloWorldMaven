@@ -1,11 +1,11 @@
 /**
-    CS-11 Asn 6
-    sphere.cpp
-    Purpose: Calculates the area of a circle and the volume
-    of a sphere.
-
-    @author Ed Parrish
-    @version 1.0 3/17/04
+ *   CS-11 Asn 6
+ *   sphere.cpp
+ *   Purpose: Calculates the area of a circle and the volume
+ *   of a sphere.
+ *
+ *   @author Ed Parrish
+ *   @version 1.0 3/17/04
 */
 
 #include <iostream>
@@ -16,18 +16,18 @@ using namespace std;
 const double PI = 3.14159;
 
 /**
-    Returns the area of a circle with the specified radius.
-
-    @param radius The radius of the circle.
-    @return The area of the circle.
+ *   Returns the area of a circle with the specified radius.
+ *
+ *   @param radius The radius of the circle.
+ *   @return The area of the circle.
 */
 double area(double radius);
 
 /**
-    Returns the volume of a sphere with the specified radius.
-
-    @param radius The radius of the circle.
-    @return The volume of the sphere.
+ *   Returns the volume of a sphere with the specified radius.
+ *
+ *   @param radius The radius of the circle.
+ *   @return The volume of the sphere.
 */
 double volume(double radius);
 
