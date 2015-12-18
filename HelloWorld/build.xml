@@ -7,12 +7,16 @@
 		<!--GCC Compile-->
 		<mkdir dir="${build}"/>
 		<exec dir="." executable="g++">
-			<arg line="-fprofile-arcs -ftest-coverage -fPIC -O0 -o" />
+			<arg line="-fprofile-arcs -ftest-coverage -O0 -o" />
 			<arg line="${build}/Hangman"/>
 			<arg line="${source}" />
 		</exec>
-
-
+		
+		<exec dir="${build}" executable="./Hangman" failonerror="true">
+		</exec>
+		
+		
+			
 		<!--Doxygen
 	<property name="build.native" value="./src" />
 	<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin/doxygen.exe" />
@@ -40,5 +44,15 @@
 		<exec executable="${execPath}" error="${reportDir}${outputFile}">
 			 <arg value="--xml --xml-version=2 --inconclusive --language=c++ *.cpp"/>
 		</exec>
+		
+		<!-- GPRof-->
+		<property name="gcovr" value="D:/Dev-ops/Setup/gcovr" />
+		<property name="gcovrDir" value="reports/gcovr" />
+		<mkdir dir="${gcovrDir}" />
+		 <exec dir="${build}" executable="${gcovr}" failonerror="true">
+			        <arg line="--branches --xml-pretty -r ."/>
+			        <redirector output="${reportDir}/gcovr.xml"/>
+		</exec>
+		
 	</target>
 </project>
