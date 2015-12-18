@@ -41,14 +41,7 @@
 			 <arg value="--xml --xml-version=2 --inconclusive --language=c++ *.cpp"/>
 		</exec>
 		
-		<!-- Gcovr-->
-		<property name="gcovr" value="C:/Users/ashmkapo/AppData/Local/Programs/Python/Python35/Scripts" />
-		<property name="gcovrDir" value="reports/gcovr" />
-		<mkdir dir="${gcovrDir}" />
-		 <exec dir="${build}" executable="${gcovr}" failonerror="true">
-			        <arg line="--branches --xml-pretty -r ."/>
-			        <redirector output="${reportDir}/gcovr.xml"/>
-		</exec>
+		
 		
 	</target>
 </project>
