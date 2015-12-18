@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <project name="HelloWorld" basedir=".">
 	<target name="init">
-		<property name="source" value="src/Time.cpp" />
+		<property name="source1" value="src/Time.cpp" />
+		<property name="source2" value="src/main.cpp" />
 		<property name="build" location="build" />
 	
 		<!--GCC Compile-->
@@ -9,7 +10,8 @@
 		<exec dir="." executable="g++">
 			<arg line="-o" />
 			<arg line="${build}/Time"/>
-			<arg line="${source}" />
+			<arg line="${source1}" />
+			<arg line="${source2}" />
 		</exec>
 			
 		<!--Doxygen
