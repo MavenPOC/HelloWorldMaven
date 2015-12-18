@@ -8,9 +8,9 @@
 		<mkdir dir="${build}" />
 		<exec dir="." executable="g++">
 			<!--<arg line="-fprofile-arcs -ftest-coverage -fPIC -O0" />-->
-			<arg line="${source}" />
 			<arg line="-o" />
-			<arg line="${build}/Hangman" />
+			<arg line="${build}/Hangman"/>
+			<arg line="${source}" />
 		</exec>
 
 
