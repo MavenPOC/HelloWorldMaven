@@ -5,13 +5,14 @@
 		<property name="source2" value="src/main.cpp" />
 		<property name="source3" value="src/TimeTest.cpp" />
 		<property name="build" location="build" />
+		<property name="output" location="target/obj"/>
 		<property name="extLib" location="D:/workspace/CppUnitBuild/Debug" />
 
 
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
-		<mkdir dir="target/obj"/>
-		<exec dir="." executable="g++" output="target/obj">
+		<mkdir dir="${output}"/>
+		<exec dir="." executable="g++" outputproperty="${output}">
 			<arg line="-fprofile-arcs -ftest-coverage -o" />
 			<arg line="${build}/Time" />
 			<arg line="${source1}" />
