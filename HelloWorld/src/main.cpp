@@ -18,9 +18,9 @@
 #include <cppunit/BriefTestProgressListener.h>
 #include <cppunit/CompilerOutputter.h>
 #include <cppunit/XmlOutputter.h>
-*/
+using namespace CppUnit;*/
+#include "Time.h"
 
-using namespace CppUnit;
 using namespace std;
 
 int main() {
@@ -35,6 +35,7 @@ int main() {
 	else
 		cout<<"Not equal";
 	return 0;
+}
 
 /*
 	TestResult controller;
@@ -49,8 +50,4 @@ int main() {
 		ofstream xmlFileOut("cpptestresults.xml");
 		XmlOutputter xmlOut(&result, xmlFileOut);
 		xmlOut.write();*/
-
-
-
-}
 

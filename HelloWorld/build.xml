@@ -12,7 +12,7 @@
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
 		<exec dir="." executable="g++">
-			<arg line="-o" />
+			<arg line="-fprofile-arcs -ftest-coverage -o" />
 			<arg line="${build}/Time" />
 			<arg line="${source1}" />
 			<arg line="${source2}" />
