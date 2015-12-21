@@ -5,20 +5,18 @@
 		<property name="source2" value="src/main.cpp" />
 		<property name="source3" value="src/TimeTest.cpp" />
 		<property name="build" location="build" />
-		<property name="test" location="test/src" />
-		<property name="extLib" location="D:/workspace/CppUnitBuild/Debug"/>
-		
-		
+		<property name="extLib" location="D:/workspace/CppUnitBuild/Debug" />
+
+
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
-		<exec dir="." executable="g++">
+		<mkdir dir="target/obj"/>
+		<exec dir="." executable="g++" objdir="target/obj">
 			<arg line="-fprofile-arcs -ftest-coverage -o" />
 			<arg line="${build}/Time" />
 			<arg line="${source1}" />
 			<arg line="${source2}" />
 		</exec>
-		
-		<!--CppUnit-->
 
 		<!--Doxygen
 		<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin/doxygen.exe" />
@@ -47,7 +45,6 @@
 			<arg value="--xml --xml-version=2 --inconclusive --language=c++ *.cpp" />
 		</exec>
 
-
-
-	</target>
-</project>
+		
+		</target>
+	</project>
