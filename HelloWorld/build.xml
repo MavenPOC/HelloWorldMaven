@@ -19,12 +19,7 @@
 		</exec>
 		
 		<!--CppUnit-->
-		<exec dir="${test}" executable="${make}" failonerror="true">
-			<arg value="TimeTest" />
-		</exec>
 
-		<exec dir="${build}" executable="./testbasicmath" failonerror="false">
-		</exec>
 		<!--Doxygen
 		<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin/doxygen.exe" />
 		<target name="clean" description="clean up">
