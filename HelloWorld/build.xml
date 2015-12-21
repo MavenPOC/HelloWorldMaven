@@ -11,7 +11,7 @@
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
 		<mkdir dir="target/obj"/>
-		<exec dir="." executable="g++" objdir="target/obj">
+		<exec dir="." executable="g++" output="target/obj">
 			<arg line="-fprofile-arcs -ftest-coverage -o" />
 			<arg line="${build}/Time" />
 			<arg line="${source1}" />
