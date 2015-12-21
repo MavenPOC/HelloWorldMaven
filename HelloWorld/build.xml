@@ -6,16 +6,17 @@
 		<property name="source3" value="src/TimeTest.cpp" />
 		<property name="build" location="build" />
 		<property name="test" location="test/src" />
-		<property name="make" location="D:/Dev-ops/Setup/Setup files/make.exe"/>
-
+		<property name="extLib" location="D:/workspace/CppUnitBuild/Debug"/>
+		
+		
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
 		<exec dir="." executable="g++">
-			<arg line="-o" />
+			<arg line="-L ${extLib} -o" />
 			<arg line="${build}/Time" />
 			<arg line="${source3}" />
 			<arg line="${source1}" />
-			<arg line="${source2} -lcppunit" />
+			<arg line="${source2} -llibCppUnitBuild.a" />
 		</exec>
 		
 		<!--CppUnit-->
