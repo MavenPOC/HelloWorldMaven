@@ -6,6 +6,7 @@
  */
 
 #include<iostream>
+/*
 #include <cppunit/TestCase.h>
 #include <cppunit/TestFixture.h>
 #include <cppunit/ui/text/TextTestRunner.h>
@@ -17,12 +18,25 @@
 #include <cppunit/BriefTestProgressListener.h>
 #include <cppunit/CompilerOutputter.h>
 #include <cppunit/XmlOutputter.h>
+*/
 
 using namespace CppUnit;
 using namespace std;
 
 int main() {
 
+	Time t1(10,55,60);
+	t1.print();
+	Time t2(6,55,60);
+	t2.print();
+
+	if(t1.equals(t2))
+		cout<<"Its equal";
+	else
+		cout<<"Not equal";
+	return 0;
+
+/*
 	TestResult controller;
 	TestResultCollector result;
 	controller.addListener(&result);
@@ -34,9 +48,9 @@ int main() {
 
 		ofstream xmlFileOut("cpptestresults.xml");
 		XmlOutputter xmlOut(&result, xmlFileOut);
-		xmlOut.write();
+		xmlOut.write();*/
 
-	return 0;
+
 
 }
 
