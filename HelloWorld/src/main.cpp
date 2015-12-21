@@ -5,25 +5,38 @@
  *      Author: ashmkapo
  */
 
-#include <iostream>
+#include<iostream>
+#include <cppunit/TestCase.h>
+#include <cppunit/TestFixture.h>
+#include <cppunit/ui/text/TextTestRunner.h>
+#include <cppunit/extensions/HelperMacros.h>
+#include <cppunit/extensions/TestFactoryRegistry.h>
+#include <cppunit/TestResult.h>
+#include <cppunit/TestResultCollector.h>
+#include <cppunit/TestRunner.h>
+#include <cppunit/BriefTestProgressListener.h>
+#include <cppunit/CompilerOutputter.h>
+#include <cppunit/XmlOutputter.h>
+
+using namespace CppUnit;
 using namespace std;
-#include "Time.h"
 
+int main() {
 
-int main()
-{
-     Time t1(10, 50, 59);
-     t1.print();   // 10:50:59
-     Time t2;
-     t2.print(); // 06:39:09
-     t2.setTime(6, 39, 9);
-     t2.print();  // 06:39:09
+	TestResult controller;
+	TestResultCollector result;
+	controller.addListener(&result);
 
-     if(t1.equals(t2))
-          cout << "Two objects are equal\n";
-     else
-          cout << "Two objects are not equal\n";
+	TestRunner runner;
+		CppUnit::TestFactoryRegistry &registry = TestFactoryRegistry::getRegistry();
+		runner.addTest(registry.makeTest());
+		runner.run(controller);
 
-     return 0;
+		ofstream xmlFileOut("cpptestresults.xml");
+		XmlOutputter xmlOut(&result, xmlFileOut);
+		xmlOut.write();
+
+	return 0;
+
 }
 

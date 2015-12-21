@@ -3,17 +3,28 @@
 	<target name="init">
 		<property name="source1" value="src/Time.cpp" />
 		<property name="source2" value="src/main.cpp" />
+		<property name="source3" value="src/TimeTest.cpp" />
 		<property name="build" location="build" />
+		<property name="test" location="test/src" />
+		<property name="make" location="D:/Dev-ops/Setup/Setup files/make.exe"/>
 
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
 		<exec dir="." executable="g++">
 			<arg line="-o" />
 			<arg line="${build}/Time" />
+			<arg line="${source3}" />
 			<arg line="${source1}" />
-			<arg line="${source2}" />
+			<arg line="${source2} -lcppunit" />
+		</exec>
+		
+		<!--CppUnit-->
+		<exec dir="${test}" executable="${make}" failonerror="true">
+			<arg value="TimeTest" />
 		</exec>
 
+		<exec dir="${build}" executable="./testbasicmath" failonerror="false">
+		</exec>
 		<!--Doxygen
 		<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin/doxygen.exe" />
 		<target name="clean" description="clean up">
