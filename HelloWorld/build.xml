@@ -12,11 +12,10 @@
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
 		<exec dir="." executable="g++">
-			<arg line="-L ${extLib} -o" />
+			<arg line="-o" />
 			<arg line="${build}/Time" />
-			<arg line="${source3}" />
 			<arg line="${source1}" />
-			<arg line="${source2} -llibCppUnitBuild.a" />
+			<arg line="${source2}" />
 		</exec>
 		
 		<!--CppUnit-->
