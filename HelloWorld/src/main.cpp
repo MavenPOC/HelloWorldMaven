@@ -6,8 +6,7 @@
  */
 
 #include<iostream>
-/*
-#include <cppunit/TestCase.h>
+/*#include <cppunit/TestCase.h>
 #include <cppunit/TestFixture.h>
 #include <cppunit/ui/text/TextTestRunner.h>
 #include <cppunit/extensions/HelperMacros.h>
@@ -37,8 +36,7 @@ int main() {
 	return 0;
 }
 
-/*
-	TestResult controller;
+	/*TestResult controller;
 	TestResultCollector result;
 	controller.addListener(&result);
 
@@ -49,5 +47,7 @@ int main() {
 
 		ofstream xmlFileOut("cpptestresults.xml");
 		XmlOutputter xmlOut(&result, xmlFileOut);
-		xmlOut.write();*/
+		xmlOut.write();
 
+		return 0;
+}*/

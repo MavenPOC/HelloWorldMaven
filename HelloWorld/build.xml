@@ -12,13 +12,15 @@
 		<!--GCC Compile-->
 		<mkdir dir="${build}" />
 		<mkdir dir="${output}"/>
-		<exec dir="." executable="g++" outputproperty="${output}">
+		<exec dir="${output}" executable="g++">
 			<arg line="-fprofile-arcs -ftest-coverage -o" />
 			<arg line="${build}/Time" />
 			<arg line="${source1}" />
 			<arg line="${source2}" />
 		</exec>
-
+	
+		<exec dir="${build}" executable="Time" failonerror="true">
+		</exec>
 		<!--Doxygen
 		<property name="doxygen.cmd" value="D:/Dev-ops/Setup/doxygen/bin/doxygen.exe" />
 		<target name="clean" description="clean up">
