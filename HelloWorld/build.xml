@@ -14,7 +14,7 @@
 		<mkdir dir="${output}"/>
 		<exec dir="${output}" executable="g++">
 			<arg line="-fprofile-arcs -ftest-coverage -o" />
-			<arg line="${build}/Time" />
+			<arg line="${build}/TimeD" />
 			<arg line="${source1}" />
 			<arg line="${source2}" />
 		</exec>
