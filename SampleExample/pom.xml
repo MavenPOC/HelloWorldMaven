@@ -28,7 +28,7 @@
     <repository>
       <id>nexus-repo</id>
       <name>Internal Releases</name>
-      <url>http://localhost:8081/nexus/content/repositories/cd</url>
+      <url>http://10.120.62.31:8081/nexus/content/repositories/cd</url>
     </repository>
   </distributionManagement>
 </project>
