@@ -16,9 +16,7 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-		<plugin>
-			
-	</plugins>
+		</plugins>
 	</build>
 
 	<dependencies>
@@ -54,6 +52,6 @@
 
 	</dependencies>
 
-	
-	
+
+
 </project>
