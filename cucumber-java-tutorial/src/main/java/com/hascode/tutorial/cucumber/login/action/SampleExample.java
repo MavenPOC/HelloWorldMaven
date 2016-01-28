@@ -1,4 +1,4 @@
-package com.javacodegeeks;
+package com.hascode.tutorial.cucumber.login;
 
 import java.util.List;
 import java.util.ArrayList;

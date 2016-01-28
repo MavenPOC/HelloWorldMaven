@@ -5,10 +5,6 @@
 	<artifactId>cucumber-java-tutorial</artifactId>
 	<version>1.0.0</version>
 
-	<properties>
-		<cucumber.version>1.2.0</cucumber.version>
-	</properties>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -22,7 +18,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -30,5 +26,8 @@
 			<version>4.11</version>
 		</dependency>
 	</dependencies>
+
+
+	
 
 </project>
