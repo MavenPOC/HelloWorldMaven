@@ -1,4 +1,4 @@
-package it.java.feature.salary;
+package test.it.java.feature.salary;
 
 import org.junit.runner.RunWith;
 

@@ -1,4 +1,4 @@
-package test.java.com.javacodegeeks;
+package test.ut.java.com.javacodegeeks;
 
 import org.junit.Assert;
 import org.junit.Test;

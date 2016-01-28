@@ -1,4 +1,4 @@
-package it.java.feature.book;
+package test.it.java.feature.book;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
