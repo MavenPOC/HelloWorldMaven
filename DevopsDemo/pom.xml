@@ -106,6 +106,12 @@
 			</build>
 		</profile>
 	</profiles>
-
+	<distributionManagement>
+		<repository>
+			<id>nexus-repo</id>
+			<name>Devops Demo</name>
+			<url>http://192.168.0.4:8081/nexus/content/repositories/cd</url>
+		</repository>
+	</distributionManagement>
 
 </project>
