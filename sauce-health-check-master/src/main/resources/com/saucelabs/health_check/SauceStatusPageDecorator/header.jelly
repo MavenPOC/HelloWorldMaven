@@ -1,0 +1,17 @@
+<j:jelly xmlns:j="jelly:core"
+         xmlns:f="/lib/form">
+    <style type="text/css">
+        .sauce_up {
+           color : green;
+        }
+
+        .sauce_unknown {
+            color : orange;
+        }
+
+        .sauce_down {
+            color : red;
+        }
+
+    </style>
+</j:jelly>
