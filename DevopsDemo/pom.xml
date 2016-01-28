@@ -52,7 +52,7 @@
 						<include>**/it/**</include>
 					</includes>
 					<excludes>
-						<exclude>**/unit/**</exclude>
+						<exclude>**/test/**</exclude>
 					</excludes>
 				</configuration>
 				<executions>
