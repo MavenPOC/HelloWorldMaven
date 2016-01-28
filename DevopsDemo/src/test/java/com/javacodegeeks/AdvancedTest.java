@@ -1,9 +1,7 @@
-package test.ut.java.com.javacodegeeks;
+package com.javacodegeeks;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import main.java.com.hascode.tutorial.cucumber.login.action.SampleExample;
 
 public class AdvancedTest {
 
