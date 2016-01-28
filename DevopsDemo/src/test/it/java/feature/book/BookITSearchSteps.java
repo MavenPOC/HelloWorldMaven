@@ -15,8 +15,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-
-public class BookSearchSteps {
+@Category(Integration.class)
+public class BookITSearchSteps {
 	Library library = new Library();
 	List<Book> result = new ArrayList<>();
 
