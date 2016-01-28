@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.hascode.tutorial.cucumber.book.Book;
-import com.hascode.tutorial.cucumber.book.Library;
+import main.com.hascode.tutorial.cucumber.book.Book;
+import main.com.hascode.tutorial.cucumber.book.Library;
 
 import cucumber.api.Format;
 import cucumber.api.java.en.Given;
