@@ -26,7 +26,7 @@
     </build>
 	<distributionManagement>
     <repository>
-      <id>deploymentRepo</id>
+      <id>build</id>
       <name>Internal Releases</name>
       <url>http://localhost:8081/nexus/content/repositories/cd</url>
     </repository>
