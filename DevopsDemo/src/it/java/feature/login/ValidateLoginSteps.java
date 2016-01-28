@@ -16,7 +16,7 @@ import cucumber.api.Format;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
+@Category(Integration.class)
 public class ValidateLoginSteps {
 	private UserLoginDAO loginDao =new UserLoginDAO() ;
 	private UserLoginAction loginAction =new UserLoginAction() ;
