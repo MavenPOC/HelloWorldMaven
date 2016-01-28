@@ -5,6 +5,7 @@
 	<artifactId>SampleExample</artifactId>
 	<packaging>war</packaging>
 	<name>SampleExample</name>
+	<version>${demo.version}</version>
 
 
 	<dependencies>
