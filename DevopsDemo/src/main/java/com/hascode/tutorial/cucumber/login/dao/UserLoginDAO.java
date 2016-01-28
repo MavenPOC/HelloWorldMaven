@@ -7,9 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class UserLoginDAO {
-	/*public String validateData(String userName,String password) throws Exception {
-		String name="";
-		System.out.println("jdbc connection");
+	public String validateData(String userName,String password) throws Exception {
+		String name="Ashmita";
+		/*System.out.println("jdbc connection");
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection(
 				"jdbc:mysql://localhost:3306/test", "root", "Oracle862");
@@ -28,7 +28,7 @@ public class UserLoginDAO {
 			con.close();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		}*/
 		return name;
-	}*/
+	}
 }
