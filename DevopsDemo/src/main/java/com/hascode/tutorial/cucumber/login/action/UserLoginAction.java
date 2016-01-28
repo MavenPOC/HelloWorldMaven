@@ -23,7 +23,7 @@ public class UserLoginAction extends Action {
 		String password = registerForm.getPassword();
 		/*UserLoginDAO dao = new UserLoginDAO();
 		String name=dao.validateData(userName, password);*/
-		if(name.equals.('Ashmita') && password.equals('Oracle862'))
+		if((name.equals('Ashmita') )&& (password.equals('Oracle862')))
 		
 		return mapping.findForward("success");
 		
