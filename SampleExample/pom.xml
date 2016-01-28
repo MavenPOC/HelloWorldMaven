@@ -50,7 +50,7 @@
 					<webXml>WebContent\WEB-INF\web.xml</webXml>
 				</configuration>
 			</plugin>
-			<plugins>
+		</plugins>
 	</build>
 	<distributionManagement>
 		<repository>
