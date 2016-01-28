@@ -29,7 +29,12 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
 				<configuration>
-					<excludedGroups>main.java.com.hascode.tutorial.cucumber.IntegrationTest</excludedGroups>
+					<includes>
+						<include>**/test/**</include>
+					</includes>
+					<excludes>
+						<exclude>**/it/**</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -37,9 +42,11 @@
 				<version>2.18.1</version>
 				<configuration>
 					<includes>
-						<include>**/*.java</include>
+						<include>**/it/**</include>
 					</includes>
-					<groups>main.java.com.hascode.tutorial.cucumber.IntegrationTest</groups>
+					<excludes>
+						<exclude>**/unit/**</exclude>
+					</excludes>
 				</configuration>
 				<executions>
 					<execution>
