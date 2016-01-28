@@ -40,21 +40,23 @@
 		</dependency>
 
 	</dependencies>
-	
+
 	<build>
-       <plugin>
+		<plugins>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
 					<webXml>WebContent\WEB-INF\web.xml</webXml>
 				</configuration>
 			</plugin>
-    </build>
+			<plugins>
+	</build>
 	<distributionManagement>
-    <repository>
-      <id>cd</id>
-      <name>Internal Releases</name>
-      <url>http://192.168.0.4:8081:8081/nexus/content/repositories/cd</url>
-    </repository>
-  </distributionManagement>
+		<repository>
+			<id>cd</id>
+			<name>Internal Releases</name>
+			<url>http://192.168.0.4:8081:8081/nexus/content/repositories/cd</url>
+		</repository>
+	</distributionManagement>
 </project>
