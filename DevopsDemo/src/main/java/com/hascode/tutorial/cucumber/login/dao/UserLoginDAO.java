@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class UserLoginDAO {
-	public String validateData(String userName,String password) throws Exception {
+	/*public String validateData(String userName,String password) throws Exception {
 		String name="";
 		System.out.println("jdbc connection");
 		Class.forName("com.mysql.jdbc.Driver");
@@ -30,5 +30,5 @@ public class UserLoginDAO {
 			e.printStackTrace();
 		}
 		return name;
-	}
+	}*/
 }
