@@ -9,8 +9,8 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import com.hascode.tutorial.cucumber.login.dao.UserLoginDAO;
-import com.hascode.tutorial.cucumber.login.form.UserLoginForm;
+import main.java.com.hascode.tutorial.cucumber.login.dao.UserLoginDAO;
+import main.java.com.hascode.tutorial.cucumber.login.form.UserLoginForm;
 
 public class UserLoginAction extends Action {
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
