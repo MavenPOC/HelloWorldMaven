@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import main.com.hascode.tutorial.cucumber.book.Book;
-import main.com.hascode.tutorial.cucumber.book.Library;
-import main.com.hascode.tutorial.cucumber.login.action.UserLoginAction;
-import main.com.hascode.tutorial.cucumber.login.dao.UserLoginDAO;
+import main.java.com.hascode.tutorial.cucumber.book.Book;
+import main.java.com.hascode.tutorial.cucumber.book.Library;
+import main.java.com.hascode.tutorial.cucumber.login.action.UserLoginAction;
+import main.java.com.hascode.tutorial.cucumber.login.dao.UserLoginDAO;
 
 import cucumber.api.Format;
 import cucumber.api.java.en.Given;

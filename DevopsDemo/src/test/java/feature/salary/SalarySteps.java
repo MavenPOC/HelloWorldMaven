@@ -5,8 +5,8 @@ import static org.hamcrest.core.IsEqual.equalTo;
 
 import java.util.List;
 
-import main.com.hascode.tutorial.cucumber.salary.Employee;
-import main.com.hascode.tutorial.cucumber.salary.SalaryManager;
+import main.java.com.hascode.tutorial.cucumber.salary.Employee;
+import main.java.com.hascode.tutorial.cucumber.salary.SalaryManager;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
