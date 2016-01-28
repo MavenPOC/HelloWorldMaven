@@ -1,4 +1,4 @@
-package acceptancetest.feature.salary;
+package feature.salary;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
