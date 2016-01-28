@@ -2,8 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  
+    
     <groupId>org.jenkins-ci.plugins</groupId>
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>sauce-health-check</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>hpi</packaging>
@@ -17,12 +18,12 @@
 
     <distributionManagement>
         <repository>
-            <id>Jenkins Plugin</id>
-            <url>http://localhost:8081/nexus/content/repositories/cd/</url>
+            <id>releases</id>
+            <url>http://10.120.62.31:8081/nexus/content/repositories/releases/</url>
         </repository>
-         <snapshotRepository>
-            <id>cloudbees.private.release.repository</id>
-            <url>dav:https://repository-saucelabs.forge.cloudbees.com/release</url>
+          <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://10.120.62.31:8081/nexus/content/repositories/sanpshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
