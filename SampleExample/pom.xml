@@ -3,9 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.javacodegeeks</groupId>
 	<artifactId>SampleExample</artifactId>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>SampleExample</name>
-	<version>1.0.0</version>
 
 
 	<dependencies>
