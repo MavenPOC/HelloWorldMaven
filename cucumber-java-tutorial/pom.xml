@@ -4,7 +4,7 @@
 	<groupId>com.hascode.tutorial</groupId>
 	<artifactId>cucumber-java-tutorial</artifactId>
 	<packaging>war</packaging>
-	<version>${demo-version}</version>
+	<version>${demo.version}</version>
 
 	<build>
 		<plugins>
