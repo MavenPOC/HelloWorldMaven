@@ -62,11 +62,6 @@
 
 	</dependencies>
 
-
-	
-	<build>
-		
-	</build>
 	<distributionManagement>
 		<repository>
 			<id>cd</id>
