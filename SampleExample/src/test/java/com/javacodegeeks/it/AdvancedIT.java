@@ -1,9 +1,11 @@
-package com.javacodegeeks;
+package com.javacodegeeks.it;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AdvancedTest {
+import com.javacodegeeks.SampleExample;
+
+public class AdvancedIT {
 
 	@Test
 	public void test() {

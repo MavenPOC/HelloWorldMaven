@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.javacodegeeks</groupId>
 	<artifactId>SampleExample</artifactId>
-	<packaging>war</packaging>
 	<name>SampleExample</name>
-	<version>${demo.version}</version>
+	<packaging>war</packaging>
+	<version>C73</version>
 
 
 	<dependencies>
@@ -20,43 +20,23 @@
 			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts-core</artifactId>
-			<version>1.3.8</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-java</artifactId>
-			<version>1.1.3</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-junit</artifactId>
-			<version>1.1.3</version>
-			<scope>test</scope>
-		</dependency>
-
 	</dependencies>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<webXml>WebContent\WEB-INF\web.xml</webXml>
-				</configuration>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.12</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
-	<distributionManagement>
-		<repository>
-			<id>cd</id>
-			<name>Internal Releases</name>
-			<url>http://192.168.0.4:8081:8081/nexus/content/repositories/cd</url>
-		</repository>
-	</distributionManagement>
 </project>

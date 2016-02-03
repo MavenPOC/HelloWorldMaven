@@ -1,7 +1,9 @@
-package com.javacodegeeks;
+package com.javacodegeeks.unit;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.javacodegeeks.SampleExample;
 
 public class SimpleTest {
 	
