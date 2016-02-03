@@ -5,7 +5,7 @@
 	<artifactId>SampleExample</artifactId>
 	<name>SampleExample</name>
 	<packaging>war</packaging>
-	<version>C73</version>
+	<version>${build.number}</version>
 
 
 	<dependencies>
