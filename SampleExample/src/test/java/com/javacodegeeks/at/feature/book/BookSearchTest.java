@@ -1,4 +1,4 @@
-package feature.book;
+package com.javacodegeeks.at.feature.book;
 
 import org.junit.runner.RunWith;
 

@@ -1,4 +1,4 @@
-package feature.book;
+package com.javacodegeeks.at.feature.book;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.hascode.tutorial.cucumber.book.Book;
-import com.hascode.tutorial.cucumber.book.Library;
+import com.javacodegeeks.Library;
+import com.javacodegeeks.Book;
 
 import cucumber.api.Format;
 import cucumber.api.java.en.Given;
