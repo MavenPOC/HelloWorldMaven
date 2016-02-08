@@ -5,7 +5,7 @@
 	<artifactId>SampleExample</artifactId>
 	<name>SampleExample</name>
 	<packaging>war</packaging>
-	<version>${build.number}</version>
+	<version>74</version>
 
 
 	<dependencies>
@@ -75,9 +75,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<webXml>WebContent\WEB-INF\web.xml</webXml>
-				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>

@@ -2,7 +2,7 @@
 <web-app>
 
 	<welcome-file-list>
-		<welcome-file>hello.jsp</welcome-file>
+		<welcome-file>Hello.jsp</welcome-file>
 	</welcome-file-list>
 
 
