@@ -67,7 +67,7 @@
           </element>
         </classpath>
         <source>
-          Import org.apache.commons.lang.SystemUtils
+          import org.apache.commons.lang.SystemUtils
           if(!SystemUtils.IS_OS_UNIX) { fail("Sorry, Not a UNIX box")}
           def command="ls -l".execute()
           println "OS Type ${SystemUtils.OS_NAME}"
