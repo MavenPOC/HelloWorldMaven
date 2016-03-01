@@ -68,11 +68,10 @@
         </classpath>
         <source>
           Import org.apache.commons.lang.SystemUtils
-          if(!SystemUtils.IS_OS_UNIX) { fail("Sorry, Not a UNIX 
-box")}
+          if(!SystemUtils.IS_OS_UNIX) { fail("Sorry, Not a UNIX box")}
           def command="ls -l".execute()
           println "OS Type ${SystemUtils.OS_NAME}"
-          println "Output:\n ${command.text}"
+          println "Output: ${command.text}"
         </source>
       </configuration>
       </execution></executions>
