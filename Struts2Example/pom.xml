@@ -49,9 +49,7 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-		</plugins>
-
-  <plugins>
+	
     <plugin>
       <groupId>org.codehaus.gmaven</groupId>
       <artifactId>gmaven-plugin</artifactId>
