@@ -5,7 +5,7 @@
 	<artifactId>SampleExample</artifactId>
 	<name>SampleExample</name>
 	<packaging>war</packaging>
-	<version>${build.number}</version>
+	<version>1.0.0-SNAPSHOT</version>
 
 
 	<dependencies>
