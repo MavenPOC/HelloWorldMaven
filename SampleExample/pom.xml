@@ -35,7 +35,7 @@
 	</dependencies>
 
 	<build>
-		<build>
+	
         <extensions>
             <extension>
                 <artifactId>wagon-webdav-jackrabbit</artifactId>
@@ -43,7 +43,7 @@
                 <version>1.0-beta-7</version>
             </extension>
         </extensions>
-    </build>  
+     
 		<plugins>
 			 <plugin>
           			<groupId>org.codehaus.mojo</groupId>
