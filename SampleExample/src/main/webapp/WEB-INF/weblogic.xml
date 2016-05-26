@@ -3,7 +3,7 @@
     <wls:weblogic-version>10.3</wls:weblogic-version> 
             <wls:session-descriptor> 
         <wls:timeout-secs>5400</wls:timeout-secs> 
-	<wls:cookie-path>/<wls:cookie-path/>
+	<wls:cookie-path>/webapp<wls:cookie-path/>
         <wls:invalidation-interval-secs>5400</wls:invalidation-interval-secs> 
     </wls:session-descriptor>  
   </wls:weblogic-web-app> 
